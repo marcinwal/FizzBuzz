@@ -16,6 +16,26 @@ describe("",function() {
       expect(fizzbuzz.isDivisibleByThree(2)).toBe(false);
     });
 
+    it("is divisible by 5",function(){
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.isDivisibleByFive(10)).toBe(true);
+    });
+
+    it("is NOT divisible by 5",function(){
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.isDivisibleByFive(9)).toBe(false);
+    });
+
+    it("is divisible by 15",function(){
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.isDivisibleByFifteen(15)).toBe(true);
+    });
+
+    it("is NOT divisible by 15",function(){
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.isDivisibleByFifteen(10)).toBe(false);
+    });
+
   });
 
 });
