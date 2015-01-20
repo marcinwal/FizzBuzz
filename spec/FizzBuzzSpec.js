@@ -41,6 +41,20 @@ describe("",function() {
       expect(fizzbuzz.says(3)).toEqual("Fizz");
     });
 
+    it('"Buzz" when a number is divisible by 5',function(){
+      expect(fizzbuzz.says(5)).toEqual("Buzz");
+    });
+
+    it('"FizzBuzz" when a number is divisible by 15',function(){
+      expect(fizzbuzz.says(15)).toEqual("FizzBuzz");
+    });
+
+  });
+
+  describe("",function(){
+    it("should print a loop",function(){
+      fizzbuzz.looop(3,"olo");
+    });
   });
 
 });

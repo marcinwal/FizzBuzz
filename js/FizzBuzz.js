@@ -20,8 +20,18 @@ FizzBuzz.prototype.isDivisibleByFifteen = function(number) {
 };
 
 FizzBuzz.prototype.says = function (number) {
+  if (this.isDivisibleByFifteen(number)) return "FizzBuzz";
   if (this.isDivisibleByThree(number)) return "Fizz";
   if (this.isDivisibleByFive(number)) return "Buzz";
-  if (this.isDivisibleByFifteen(number)) return "FizzBuzz";
+  return number;
 };
+
+FizzBuzz.prototype.looop = function(number,text) {
+  var msg = text.toUpperCase();
+  for( i=0 ; i < number; i++){
+    console.log(msg + i)
+  }
+};
+
+
 
